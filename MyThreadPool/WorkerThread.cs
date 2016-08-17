@@ -84,6 +84,9 @@ namespace MyThreadPool
                     if (!this._disposed)
                         Thread.ResetAbort();
                 }
+                catch (Exception)
+                {
+                }
                 finally
                 {
                     this.IsWorking = false;
