@@ -163,7 +163,7 @@ namespace MyThreadPool
                 this._workQueue.Enqueue(new WorkItem(callback, state));
                 this._spin = false;
 
-                if (!this.TryGetWorkerThreadAndWorkItem(out  workerThread, out  workItem, true))
+                if (!this.TryGetWorkerThreadAndWorkItem(out  workerThread, out  workItem, false))
                 {
                     return true;
                 }
