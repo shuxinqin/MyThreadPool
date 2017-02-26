@@ -344,7 +344,7 @@ namespace MyThreadPool
                         break;
                     }
                 }
-                Thread.SpinWait(1);
+                Thread.Sleep(1);
             }
         }
 
